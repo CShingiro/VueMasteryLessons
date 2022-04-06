@@ -1,0 +1,74 @@
+{
+  "events": [
+    {
+      "id": 123,
+      "category": "animal welfare",
+      "title": "Cat Adoption Day",
+      "description": "Find your new feline friend at this event.",
+      "location": "Meow Town",
+      "date": "January 28, 2022",
+      "time": "12:00",
+      "organizer": "Kat Laydee"
+    },
+    {
+      "id": 456,
+      "category": "food",
+      "title": "Community Gardening",
+      "description": "Join us as we tend to the community edible plants.",
+      "location": "Flora City",
+      "date": "March 14, 2022",
+      "time": "10:00",
+      "organizer": "Fern Pollin"
+    },
+    {
+      "id": 789,
+      "category": "sustainability",
+      "title": "Beach Cleanup",
+      "description": "Help pick up trash along the shore.",
+      "location": "Playa Del Carmen",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "organizer": "Carey Wales"
+    },
+    {
+      "id": "c6d019a6-ae57-48a1-a0c3-09fe77b2e122",
+      "category": "animal welfare",
+      "title": "Horse Brush Racing",
+      "description": "a fun event",
+      "location": "New York",
+      "date": "August 18 2028",
+      "time": "2:00",
+      "organizer": "Christian Shingiro"
+    },
+    {
+      "id": "10578af5-5e80-4ce3-b341-407721239b05",
+      "category": "animal welfare",
+      "title": "Kangaroo Combing Competition",
+      "description": "What does this event look like?",
+      "location": "Outback",
+      "date": "Sept 4, 2025",
+      "time": "3:00",
+      "organizer": "Christian Shingiro"
+    },
+    {
+      "id": "b7399074-1694-42d3-8425-34cf4806573f",
+      "category": "education",
+      "title": "Learning Luncheon",
+      "description": "a new event",
+      "location": "New York",
+      "date": "September 15, 2024",
+      "time": "12:00",
+      "organizer": "Christian Shingiro"
+    },
+    {
+      "id": "44ee7a43-3bea-48fc-bd4c-6435a881f9bb",
+      "category": "food",
+      "title": "Community Potluck",
+      "description": "Bring a dish to share.",
+      "location": "a covid-free place in the future",
+      "date": "May 20, 2024",
+      "time": "1:00",
+      "organizer": "Christian Shingiro"
+    }
+  ]
+}
