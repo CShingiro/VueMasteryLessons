@@ -1,3 +1,3 @@
 import { defineStore } from 'pinia'
 
-export const useUserStore = define('UserStore', {})
+export const useUserStore = defineStore('UserStore', {})
