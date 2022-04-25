@@ -1,15 +1,8 @@
-<script>
+<script setup lang="ts">
 import { useUserStore } from "./store/UserStore";
 
-export default {
-  setup() {
-    const userStore = useUserStore();
+const userStore = useUserStore()
 
-    return {
-      userStore,
-    };
-  },
-};
 </script>
 
 <template>
