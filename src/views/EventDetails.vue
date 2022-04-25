@@ -6,8 +6,10 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
   props: ["id"],
   created() {
     this.$store.dispatch("fetchEvent", this.id).catch((error) => {
@@ -22,5 +24,5 @@ export default {
       return this.$store.state.event;
     },
   },
-};
+});
 </script>

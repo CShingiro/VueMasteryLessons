@@ -1,11 +1,12 @@
 import { createStore } from "vuex";
-import EventService from "@/services/EventService.js";
+import EventService from "../services/EventService";
+import { StateItem } from "../types";
 
 export default createStore({
   state: {
     user: "Christian Shingiro",
     events: [],
-  },
+  } as StateItem,
   getters: {},
   mutations: {
     ADD_EVENT(state, event) {

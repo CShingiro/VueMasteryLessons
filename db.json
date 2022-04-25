@@ -69,6 +69,16 @@
       "date": "May 20, 2024",
       "time": "1:00",
       "organizer": "Christian Shingiro"
+    },
+    {
+      "id": "24c5c524-76f6-4593-af9d-2628a61c4bb6",
+      "category": "",
+      "title": "Life Hack",
+      "description": "Hacking Life",
+      "location": "Waterloo",
+      "date": "August 11, 2022",
+      "time": "12:00pm",
+      "organizer": "Christian Shingiro"
     }
   ]
 }

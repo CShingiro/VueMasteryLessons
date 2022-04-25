@@ -52,10 +52,11 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { v4 as uuidv4 } from "uuid";
+import { defineComponent } from "vue";
 
-export default {
+export default defineComponent({
   data() {
     return {
       categories: [
@@ -102,5 +103,5 @@ export default {
         });
     },
   },
-};
+});
 </script>
