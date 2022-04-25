@@ -1,5 +1,5 @@
-import { mount } from "@/vue/test-utils";
-import EventCard from "@/components/EventCard";
+import { mount } from "@vue/test-utils";
+import EventCard from "@/components/EventCard.vue";
 
 describe("EventCard", () => {
   it(`renders the event's date successfully`, () => {
