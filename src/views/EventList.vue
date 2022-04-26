@@ -1,5 +1,5 @@
 <template>
-  <h1>Events for Good</h1>
+  <h1>{{ $store.getters.numberOfEvents }} Events for Good</h1>
   <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>

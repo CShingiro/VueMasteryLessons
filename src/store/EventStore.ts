@@ -5,4 +5,7 @@ export const useEventStore = defineStore("EventStore", {
     events: [],
     event: {},
   }),
+  getters: {
+    numberOfEvents: state => state.events.length
+  }
 });

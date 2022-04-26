@@ -12,7 +12,7 @@ const userStore = useUserStore()
     <router-link :to="{ name: 'EventCreate' }">Create Event</router-link>
   </nav>
   <router-view />
-  <p>Logged in as {{ userStore.user }}</p>
+  <p>Logged in as {{ userStore.firstName }}</p>
 </template>
 
 <style>

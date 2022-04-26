@@ -3,7 +3,7 @@
   <p>{{ error }}</p>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: ["error"],
 };
