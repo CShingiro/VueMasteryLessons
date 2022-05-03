@@ -79,6 +79,16 @@
       "date": "August 11, 2022",
       "time": "12:00pm",
       "organizer": "Christian Shingiro"
+    },
+    {
+      "id": "81df6e47-0749-45c1-9297-eb225bfedb96",
+      "category": "sustainability",
+      "title": "LifeLine",
+      "description": "Creation",
+      "location": "Waterloo",
+      "date": "Monday May 9th, 2022",
+      "time": "7:00 pm",
+      "organizer": "Christian Shingiro"
     }
   ]
 }

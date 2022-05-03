@@ -1,10 +1,11 @@
 export interface StateItem {
   user: string;
   events: EventItem[];
+  event: EventItem;
 }
 
 export interface EventItem {
-  id: number;
+  id: number | null;
   category: string;
   title: string;
   description: string;

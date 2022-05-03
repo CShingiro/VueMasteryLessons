@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useUserStore } from "./store/UserStore";
+import { useEventStore } from "./store/EventStore";
 
-const userStore = useUserStore()
+const eventStore = useEventStore()
 
 </script>
 
@@ -12,7 +12,7 @@ const userStore = useUserStore()
     <router-link :to="{ name: 'EventCreate' }">Create Event</router-link>
   </nav>
   <router-view />
-  <p>Logged in as {{ userStore.firstName }}</p>
+  <p>Logged in as {{ eventStore.firstName }}</p>
 </template>
 
 <style>
