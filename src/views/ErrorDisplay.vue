@@ -4,9 +4,9 @@
 </template>
 
 <script setup lang="ts">
-interface Props {
-  error: string[];
-}
+import { defineProps } from "vue";
 
-const { error } = defineProps<Props>();
+const props = defineProps<{ error: any }>();
+
+props.error;
 </script>

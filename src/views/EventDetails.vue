@@ -10,6 +10,7 @@
 </template>
 
 <script setup lang="ts">
+import { defineProps } from "vue";
 import { useEventStore } from "@/store/EventStore";
 import { EventItem } from "../types";
 

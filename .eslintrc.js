@@ -5,12 +5,6 @@ module.exports = {
     node: true,
   },
 
-  extends: [
-    "plugin:vue/vue3-essential",
-    "eslint:recommended",
-    "plugin:prettier/recommended",
-  ],
-
   parserOptions: {
     parser: "@typescript-eslint/parser",
   },

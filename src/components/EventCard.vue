@@ -12,10 +12,14 @@
 </template>
 
 <script setup lang="ts">
+import { defineProps } from "vue";
 import EventDetails from "@/views/EventDetails.vue";
 import { EventItem } from "../types";
 
-defineProps<{ id: number; event: EventItem }>();
+const props = defineProps<{ id: number; event: EventItem }>();
+
+props.id;
+props.event;
 </script>
 
 <style scoped>
