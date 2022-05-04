@@ -3,8 +3,12 @@
   <p>{{ error }}</p>
 </template>
 
-<script lang="ts">
-export default {
-  props: ["error"],
-};
+<script setup lang="ts">
+interface Props {
+  error: string;
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  error: "",
+});
 </script>

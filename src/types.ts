@@ -5,7 +5,7 @@ export interface StateItem {
 }
 
 export interface EventItem {
-  id: number | null;
+  id: number | null | string;
   category: string;
   title: string;
   description: string;

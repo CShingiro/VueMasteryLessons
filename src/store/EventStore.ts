@@ -6,7 +6,7 @@ export const useEventStore = defineStore("EventStore", {
   state: () => ({
     user: "Christian Shingiro",
     events: [],
-    event: {} as unknown,
+    event: {} as EventItem,
   }) as StateItem,
   getters: {
     numberOfEvents: state => state.events.length,
@@ -30,7 +30,7 @@ export const useEventStore = defineStore("EventStore", {
           throw error;
         });
     },
-    fetchEvent(id: unknown) {
+    fetchEvent(id: string) {
       const existingEvent = this.events.find((event) => event.id === id);
       if (existingEvent) {
         this.event = existingEvent;

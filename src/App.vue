@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { useEventStore } from "./store/EventStore";
 
-const eventStore = useEventStore()
-
+const eventStore = useEventStore();
 </script>
 
 <template>

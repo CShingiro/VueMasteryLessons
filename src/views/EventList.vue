@@ -1,7 +1,11 @@
 <template>
   <h1>{{ eventStore.numberOfEvents }} Events for Good</h1>
   <div class="events">
-    <EventCard v-for="event in eventStore.events" :key="event.id" :event="event" />
+    <EventCard
+      v-for="event in eventStore.events"
+      :key=event.id
+      :event="event"
+    />
   </div>
 </template>
 
@@ -10,18 +14,17 @@
 import EventCard from "@/components/EventCard.vue";
 import { useEventStore } from "../store/EventStore";
 
-  "EventList";
-  EventCard;
+("EventList");
+EventCard;
 
-  const eventStore = useEventStore();
+const eventStore = useEventStore();
 
-  eventStore.fetchEvents().catch((error) => {
-    this.$router.push({
-      name: "ErrorDisplay",
-      params: { error: error },
-    });
+eventStore.fetchEvents().catch((error) => {
+  this.$router.push({
+    name: "ErrorDisplay",
+    params: { error: error },
   });
-
+});
 </script>
 
 <style scoped>
