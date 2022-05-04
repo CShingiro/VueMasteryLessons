@@ -5,10 +5,8 @@
 
 <script setup lang="ts">
 interface Props {
-  error: string;
+  error: string[];
 }
 
-const props = withDefaults(defineProps<Props>(), {
-  error: "",
-});
+const { error } = defineProps<Props>();
 </script>

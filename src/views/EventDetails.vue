@@ -1,27 +1,23 @@
 <template>
-  <div v-if="eventStore.event">
-    <h1>{{ eventStore.event.title }}</h1>
+  <div v-if="event">
+    <h1>{{ event.title }}</h1>
     <p>
-      {{ eventStore.event.time }} on {{ eventStore.event.date }} @
-      {{ eventStore.event.location }}
+      {{ event.time }} on {{ event.date }} @
+      {{ event.location }}
     </p>
-    <p>{{ eventStore.event.description }}</p>
+    <p>{{ event.description }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
 import { useEventStore } from "@/store/EventStore";
-
-interface Props {
-  id: string;
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  id: "",
-});
+import { EventItem } from "../types";
 
 const eventStore = useEventStore();
-eventStore.fetchEvent(props.id).catch((error: unknown) => {
+
+const props = defineProps<{ id: number; event: EventItem }>();
+
+eventStore.fetchEvent(props.id).catch((error: string[]) => {
   this.$router.push({
     name: "ErrorDisplay",
     params: { error: error },

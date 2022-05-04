@@ -89,6 +89,16 @@
       "date": "Monday May 9th, 2022",
       "time": "7:00 pm",
       "organizer": "Christian Shingiro"
+    },
+    {
+      "id": "39e11a90-c83b-44e1-9542-60eae640ca1e",
+      "category": "animal welfare",
+      "title": "Bug Add Check",
+      "description": "Checking if I can add events with all of these bugs",
+      "location": "Kitchener",
+      "date": "May 4, 2022",
+      "time": "00:00 AM",
+      "organizer": "Christian Shingiro"
     }
   ]
 }

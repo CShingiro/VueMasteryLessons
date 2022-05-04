@@ -75,7 +75,7 @@ const categories = [
   "community",
 ];
 eventStore.event = {
-  id: null,
+  id: "",
   category: "",
   title: "",
   description: "",
@@ -98,7 +98,7 @@ function onSubmit() {
         params: { id: event.id },
       });
     })
-    .catch((error: unknown) => {
+    .catch((error: string[]) => {
       this.$router.push({
         name: "ErrorDisplay",
         params: { error: error },

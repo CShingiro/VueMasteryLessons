@@ -2,8 +2,8 @@
   <h1>{{ eventStore.numberOfEvents }} Events for Good</h1>
   <div class="events">
     <EventCard
-      v-for="event in eventStore.events"
-      :key=event.id
+      v-for="(event, id) in eventStore.events"
+      :key="id"
       :event="event"
     />
   </div>
@@ -13,9 +13,6 @@
 // @ is an alias to /src
 import EventCard from "@/components/EventCard.vue";
 import { useEventStore } from "../store/EventStore";
-
-("EventList");
-EventCard;
 
 const eventStore = useEventStore();
 

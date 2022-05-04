@@ -11,7 +11,7 @@ const eventStore = useEventStore();
     <router-link :to="{ name: 'EventCreate' }">Create Event</router-link>
   </nav>
   <router-view />
-  <p>Logged in as {{ eventStore.firstName }}</p>
+  <p>Logged in as {{ eventStore.user }}</p>
 </template>
 
 <style>
