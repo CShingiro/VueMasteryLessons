@@ -17,6 +17,9 @@ const eventStore = useEventStore();
 
 const props = defineProps<{ id: number; event: EventItem }>();
 
+props.event
+props.id
+
 eventStore.fetchEvent(props.id).catch((error: string[]) => {
   this.$router.push({
     name: "ErrorDisplay",
