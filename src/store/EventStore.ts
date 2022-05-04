@@ -6,7 +6,7 @@ export const useEventStore = defineStore("EventStore", {
   state: () =>
     ({
       user: "Christian Shingiro",
-      events: [],
+      events: [] as EventItem[],
       event: {} as EventItem,
     } as StateItem),
   getters: {
@@ -44,6 +44,6 @@ export const useEventStore = defineStore("EventStore", {
             console.log(error);
           });
       }
-    }
+    },
   },
 });
