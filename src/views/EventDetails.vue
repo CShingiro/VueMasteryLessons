@@ -21,5 +21,5 @@ const props = defineProps<{ id: number; event: EventItem }>();
 props.event;
 props.id;
 
-eventStore.fetchEvent(props.id)
+eventStore.fetchEvent(props.id);
 </script>

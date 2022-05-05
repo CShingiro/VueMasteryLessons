@@ -90,19 +90,6 @@ function onSubmit() {
     id: uuidv4(),
     organizer: eventStore.user,
   };
-  eventStore
-    .createEvent(event)
-    .then(() => {
-      this.$router.push({
-        name: "EventDetails",
-        params: { id: event.id },
-      });
-    })
-    .catch((error: string[]) => {
-      this.$router.push({
-        name: "ErrorDisplay",
-        params: { error: error },
-      });
-    });
+  eventStore.createEvent(event);
 }
 </script>
