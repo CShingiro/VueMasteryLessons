@@ -14,6 +14,7 @@
 <script setup lang="ts">
 import EventDetails from "@/views/EventDetails.vue";
 import { EventItem } from "../types";
+import { defineProps } from "vue";
 
 const props = defineProps<{ id: number; event: EventItem }>();
 

@@ -1,14 +1,13 @@
 import { defineStore } from "pinia";
 import EventService from "../services/EventService";
-import { StateItem, EventItem } from "../types";
+import { EventItem } from "../types";
 
 export const useEventStore = defineStore("EventStore", {
-  state: () =>
-    ({
-      user: "Christian Shingiro",
-      events: [] as EventItem[],
-      event: {} as EventItem,
-    } as StateItem),
+  state: () => ({
+    user: "Christian Shingiro",
+    events: [] as EventItem[],
+    event: {} as EventItem,
+  }),
   getters: {
     numberOfEvents: (state) => state.events.length,
   },

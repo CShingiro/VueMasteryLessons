@@ -1,7 +1,7 @@
 <template>
   <h1>{{ eventStore.numberOfEvents }} Events for Good</h1>
   <div class="events">
-    <EventCard
+    <EventCardVue
       v-for="(event, id) in eventStore.events"
       :key="id"
       :event="event"
@@ -11,17 +11,12 @@
 
 <script setup lang="ts">
 // @ is an alias to /src
-import EventCard from "@/components/EventCard.vue";
+import EventCardVue from "@/components/EventCard.vue";
 import { useEventStore } from "../store/EventStore";
 
 const eventStore = useEventStore();
 
-eventStore.fetchEvents().catch((error) => {
-  this.$router.push({
-    name: "ErrorDisplay",
-    params: { error: error },
-  });
-});
+eventStore.fetchEvents();
 </script>
 
 <style scoped>

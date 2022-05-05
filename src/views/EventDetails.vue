@@ -12,18 +12,14 @@
 <script setup lang="ts">
 import { useEventStore } from "@/store/EventStore";
 import { EventItem } from "../types";
+import { defineProps } from "vue";
 
 const eventStore = useEventStore();
 
 const props = defineProps<{ id: number; event: EventItem }>();
 
-props.event
-props.id
+props.event;
+props.id;
 
-eventStore.fetchEvent(props.id).catch((error: string[]) => {
-  this.$router.push({
-    name: "ErrorDisplay",
-    params: { error: error },
-  });
-});
+eventStore.fetchEvent(props.id)
 </script>
