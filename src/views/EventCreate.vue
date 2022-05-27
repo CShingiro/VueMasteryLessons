@@ -63,6 +63,7 @@
 <script setup lang="ts">
 import { v4 as uuidv4 } from "uuid";
 import { useEventStore } from "@/store/EventStore";
+import { reactive } from "vue";
 
 const eventStore = useEventStore();
 const categories = [
@@ -74,7 +75,7 @@ const categories = [
   "food",
   "community",
 ];
-eventStore.event = {
+eventStore.event = reactive({
   id: "",
   category: "",
   title: "",
@@ -83,7 +84,7 @@ eventStore.event = {
   date: "",
   time: "",
   organizer: "",
-};
+});
 function onSubmit() {
   const event = {
     ...eventStore.event,
